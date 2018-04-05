@@ -1,0 +1,78 @@
+{
+    "enabled": true,
+    "coin": "_coin.json",
+
+    "auxes": [ ],
+    "address": "n4jSe18kZMCdGcZqaYprShXW6EH1wivUK1",
+
+    "rewardRecipients": {
+        "n37vuNFkXfk15uFnGoVyHZ6PYQxppD3QqK": 1.5,
+        "22851477d63a085dbc2398c8430af1c09e7343f6": 0.1
+    },
+
+    "paymentProcessing": {
+        "enabled": true,
+        "paymentInterval": 3600,
+        "minimumPayment": 1,
+        "daemon": {
+            "host": "127.0.0.1",
+            "port": 9999,
+            "user": "1",
+            "password": "12"
+        }
+    },
+
+    "ports": {
+        "3008": {
+            "diff": 0.0002,
+            "varDiff": {
+                "minDiff": 0.0002,
+                "maxDiff": 5120000,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        },
+        "3032": {
+            "diff": 8,
+            "varDiff": {
+                "minDiff": 0.0002,
+                "maxDiff": 5120000,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            }
+        },
+        "3256": {
+            "diff": 256
+        }
+    },
+
+    "daemons": [
+        {
+            "host": "127.0.0.1",
+            "port": 9999,
+            "user": "1",
+            "password": "12"
+        }
+    ],
+
+    "p2p": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 19333,
+        "disableTransactions": false
+    },
+
+    "mposMode": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": 3306,
+        "user": "me",
+        "password": "mypass",
+        "database": "ltc",
+        "checkPassword": false,
+        "autoCreateWorker": false
+    }
+
+}
